@@ -1,0 +1,32 @@
+<?php echo $this->doctype(); ?>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>INSSET ALUMNI</title>
+		
+		<link href="<?php echo $this->baseUrl('/css/bootstrap.min.css')?>" media="screen" rel="stylesheet" type="text/css" />
+			<style>	body {	padding-top: 60px;	} </style>
+		<link href="<?php echo $this->baseUrl('/css/bootstrap-responsive.min.css')?>" media="screen" rel="stylesheet" type="text/css" />
+		<link href="<?php echo $this->baseUrl('/css/style.css')?>" media="screen" rel="stylesheet" type="text/css" />
+	
+		<script type="text/javascript" src="<?php echo $this->baseUrl('/js/jquery.js')?>"></script>
+		<script type="text/javascript" src="<?php echo $this->baseUrl('/js/bootstrap.js')?>"></script>
+		
+	</head>
+	
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<a class="brand liMenu" href="#">INSSET ALUMNI</a>
+						<li class="active liMenu">	<a href="#">Home</a>			</li>
+						<li class="liMenu">		 	<a href="#about">About</a>		</li>
+						<li class="liMenu">		 	<a href="#contact">Contact</a>	</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<?php echo $this->layout()->content; ?>
+	</body>
+</html>
