@@ -1,5 +1,18 @@
+html { 
+	height: 100% 
+}
+
+#map_canvas { 
+	height: 20%;
+	width:20%;
+}
+      
 body {
-background-color:#DDD;
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	padding-top: 60px;
+	background-color:#DDD;
 }
 [class*="span"] {
 margin-top: 10px;

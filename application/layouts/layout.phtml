@@ -5,16 +5,30 @@
 		<title>INSSET ALUMNI</title>
 		
 		<link href="<?php echo $this->baseUrl('/css/bootstrap.min.css')?>" media="screen" rel="stylesheet" type="text/css" />
-			<style>	body {	padding-top: 60px;	} </style>
 		<link href="<?php echo $this->baseUrl('/css/bootstrap-responsive.min.css')?>" media="screen" rel="stylesheet" type="text/css" />
 		<link href="<?php echo $this->baseUrl('/css/style.css')?>" media="screen" rel="stylesheet" type="text/css" />
 	
 		<script type="text/javascript" src="<?php echo $this->baseUrl('/js/jquery.js')?>"></script>
 		<script type="text/javascript" src="<?php echo $this->baseUrl('/js/bootstrap.js')?>"></script>
-		
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD-aaUSCPHAypyMziDh79ahf8piRZmppM&sensor=true">
+		</script>
+		<script type="text/javascript">
+			function initialize() 
+			{
+		        var mapOptions = 
+		        {
+		          center: new google.maps.LatLng(-34.397, 150.644),
+		          zoom: 0,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        };
+		        var map = new google.maps.Map(document.getElementById("map_canvas"),
+		            mapOptions);
+		     }
+		</script>
 	</head>
 	
-	<body>
+	<body onload="initialize()">
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
